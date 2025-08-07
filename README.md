@@ -1,7 +1,7 @@
-# gcp-etl-employee-pipeline-project
+# ETL Project with Data Fusion, Airflow, and BigQuery
 End-to-end GCP data pipeline using Python, Cloud Storage, Data Fusion, BigQuery, Airflow (Composer), and Looker for employee data ingestion, transformation, and visualization.
 
-****📝 Overview****
+# Overview
 
 The project aims to perform the following tasks:
 
@@ -16,7 +16,7 @@ The project aims to perform the following tasks:
 
 **Data Visualization**: Visualize insights in Looker from BigQuery datasets.
 
-**🏗️ Architecture Diagram**
+# Architecture Diagram
 
 <img width="900" height="776" alt="image" src="https://github.com/user-attachments/assets/4060650f-edcf-4af3-a756-59c49ca517a5" />
 
@@ -24,7 +24,7 @@ The project aims to perform the following tasks:
 
 
 
-**Components:**
+# Components
 
 **VS Code + Python**: Code environment for data simulation and pipeline logic.
 
