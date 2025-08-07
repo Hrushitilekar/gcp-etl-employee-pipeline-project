@@ -24,12 +24,12 @@ with open('employee_data.csv', mode='w', newline='') as file:
             "first_name": fake.first_name(),
             "last_name": fake.last_name(),
             "job_title": fake.job(),
-            "department": fake.job(),  # Generate department-like data using the job() method
+            "department": fake.job(),  
             "email": fake.email(),
             "address": fake.city(),
             "phone_number": fake.phone_number(),
-            "salary": fake.random_number(digits=5),  # Generate a random 5-digit salary
-            "password": ''.join(random.choice(password_characters) for _ in range(8))  # Generate an 8-character password with 'm'
+            "salary": fake.random_number(digits=5),  
+            "password": ''.join(random.choice(password_characters) for _ in range(8))  
         })
 
 # Upload the CSV file to a GCS bucket
@@ -48,4 +48,5 @@ source_file_name = 'employee_data.csv'
 destination_blob_name = 'employee_data.csv'
 
 # Upload the CSV file to GCS
+
 upload_to_gcs(bucket_name, source_file_name, destination_blob_name)
